@@ -4,10 +4,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.text.SimpleDateFormat;
-
 public class Ali_logging {
-
+    private static final Logger logger = LoggerFactory.getLogger(Ali_logging.class);
 
 /*
 阿里日志规范：file:///C:/Users/Administrator/Desktop/Java_%E9%98%BF%E9%87%8C%E8%A7%84%E8%8C%83.pdf
@@ -17,8 +15,6 @@ layout 详细描述：http://blog.csdn.net/doraemon_wu/article/details/52040859
  */
     @Test
     public void xml() {
-        Logger logger = LoggerFactory.getLogger(this.getClass());
-
         try {
             throw new NullPointerException();
         } catch (Exception e) {
