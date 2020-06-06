@@ -1,4 +1,4 @@
 rootProject.name = 'demo'
-include 'java_se'
+include 'javase'
 include 'logging'
 
